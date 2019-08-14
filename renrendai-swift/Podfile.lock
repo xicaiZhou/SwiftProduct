@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - APESuperHUD (2.0.1)
+  - BetterSegmentedControl (1.2.1)
+  - Kingfisher (5.5.0)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - AlamofireImage (~> 3.5)
+  - APESuperHUD (from `https://github.com/apegroup/APESuperHUD.git`)
+  - BetterSegmentedControl (~> 1.2)
+  - Kingfisher (~> 5.5.0)
+  - SnapKit
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - BetterSegmentedControl
+    - Kingfisher
+    - SnapKit
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  APESuperHUD:
+    :git: https://github.com/apegroup/APESuperHUD.git
+
+CHECKOUT OPTIONS:
+  APESuperHUD:
+    :commit: 7a94bfdcd78cb0b1795ce5e933cf911eac54ec89
+    :git: https://github.com/apegroup/APESuperHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  APESuperHUD: 18ce2f9f114dd38d8fef5a6831e71ae9634cfc26
+  BetterSegmentedControl: b27bddbdff29b6cae988678d6cd106858986cd03
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+
+PODFILE CHECKSUM: dc6ff68f9b04f423e7d9095de631689e211aa923
+
+COCOAPODS: 1.8.0.beta.1

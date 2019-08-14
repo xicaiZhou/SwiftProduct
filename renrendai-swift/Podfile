@@ -1,0 +1,27 @@
+
+source 'https://github.com/wsl2ls/SLSpecs.git' #私有索引库
+source 'https://github.com/CocoaPods/Specs.git'  #公有索引库
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'renrendai-swift' do
+  use_frameworks!
+  # 忽略引入库的所有警告
+  inhibit_all_warnings!
+  
+  #Masonry
+  pod 'SnapKit'
+  # AFNetWorking
+  pod 'Alamofire', '~> 4.8'
+  pod 'AlamofireImage', '~> 3.5'
+  # SDWebImage
+  pod 'Kingfisher', '~> 5.5.0'
+  # HUD
+  pod 'APESuperHUD', :git => 'https://github.com/apegroup/APESuperHUD.git'
+  # Toast
+  pod 'Toast-Swift', '~> 5.0.0'
+  # SegmentControl -> Swift 5
+  pod 'BetterSegmentedControl', '~> 1.2'
+
+end

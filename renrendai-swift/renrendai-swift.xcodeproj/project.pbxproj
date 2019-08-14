@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22229A1722F98A950065B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A1622F98A950065B9F6 /* AppDelegate.swift */; };
+		22229A1C22F98A950065B9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22229A1A22F98A950065B9F6 /* Main.storyboard */; };
+		22229A1E22F98A960065B9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22229A1D22F98A960065B9F6 /* Assets.xcassets */; };
+		22229A2122F98A960065B9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22229A1F22F98A960065B9F6 /* LaunchScreen.storyboard */; };
+		22229A2C22F98A960065B9F6 /* renrendai_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A2B22F98A960065B9F6 /* renrendai_swiftTests.swift */; };
+		22229A3722F98A960065B9F6 /* renrendai_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A3622F98A960065B9F6 /* renrendai_swiftUITests.swift */; };
+		22229A4C22FAC7D10065B9F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A4B22FAC7D10065B9F6 /* BaseViewController.swift */; };
+		22229A4E22FAC8240065B9F6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A4D22FAC8240065B9F6 /* BaseNavigationController.swift */; };
+		22229A5022FAC8840065B9F6 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A4F22FAC8840065B9F6 /* BaseTabbarController.swift */; };
+		22229A5222FAC8D90065B9F6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A5122FAC8D90065B9F6 /* LoginController.swift */; };
+		22229A5822FAD7230065B9F6 /* NSString-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A5522FAD7230065B9F6 /* NSString-Extension.swift */; };
+		22229A5922FAD7230065B9F6 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A5622FAD7230065B9F6 /* UIColor-Extension.swift */; };
+		22229A5A22FAD7230065B9F6 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A5722FAD7230065B9F6 /* NSDate-Extension.swift */; };
+		22229A5E22FAD9C40065B9F6 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A5D22FAD9C40065B9F6 /* UIView-Extension.swift */; };
+		2229FDB02302B4D60021F628 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDAF2302B4D60021F628 /* Utils.swift */; };
+		2229FDB22302B4E50021F628 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB12302B4E50021F628 /* Alert.swift */; };
+		2229FDB82303EF8D0021F628 /* XCPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB72303EF8D0021F628 /* XCPickerManager.swift */; };
+		2229FDBA2303F6A50021F628 /* XCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB92303F6A50021F628 /* XCDatePicker.swift */; };
+		225DABD922FD0EFB009A4894 /* XCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABD822FD0EFB009A4894 /* XCNetwork.swift */; };
+		225DABDE22FD683B009A4894 /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDD22FD683B009A4894 /* JSONKit.swift */; };
+		225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDF22FD68D1009A4894 /* CleanJSON.swift */; };
+		225DABE222FD78BB009A4894 /* res.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABE122FD78BB009A4894 /* res.swift */; };
+		A6C087C7641347D423308833 /* Pods_renrendai_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22229A2822F98A960065B9F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22229A0B22F98A950065B9F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22229A1222F98A950065B9F6;
+			remoteInfo = "renrendai-swift";
+		};
+		22229A3322F98A960065B9F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22229A0B22F98A950065B9F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22229A1222F98A950065B9F6;
+			remoteInfo = "renrendai-swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22229A1322F98A950065B9F6 /* renrendai-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "renrendai-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22229A1622F98A950065B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22229A1B22F98A950065B9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22229A1D22F98A960065B9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22229A2022F98A960065B9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22229A2222F98A960065B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22229A2722F98A960065B9F6 /* renrendai-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "renrendai-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22229A2B22F98A960065B9F6 /* renrendai_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renrendai_swiftTests.swift; sourceTree = "<group>"; };
+		22229A2D22F98A960065B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22229A3222F98A960065B9F6 /* renrendai-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "renrendai-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22229A3622F98A960065B9F6 /* renrendai_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renrendai_swiftUITests.swift; sourceTree = "<group>"; };
+		22229A3822F98A960065B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22229A4B22FAC7D10065B9F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		22229A4D22FAC8240065B9F6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		22229A4F22FAC8840065B9F6 /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
+		22229A5122FAC8D90065B9F6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		22229A5522FAD7230065B9F6 /* NSString-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString-Extension.swift"; sourceTree = "<group>"; };
+		22229A5622FAD7230065B9F6 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		22229A5722FAD7230065B9F6 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		22229A5D22FAD9C40065B9F6 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		22251AA923016165008A8DD1 /* renrendai-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "renrendai-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2229FDAF2302B4D60021F628 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2229FDB12302B4E50021F628 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2229FDB72303EF8D0021F628 /* XCPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCPickerManager.swift; sourceTree = "<group>"; };
+		2229FDB92303F6A50021F628 /* XCDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDatePicker.swift; sourceTree = "<group>"; };
+		225DABD822FD0EFB009A4894 /* XCNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCNetwork.swift; sourceTree = "<group>"; };
+		225DABDD22FD683B009A4894 /* JSONKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
+		225DABDF22FD68D1009A4894 /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
+		225DABE122FD78BB009A4894 /* res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = res.swift; sourceTree = "<group>"; };
+		9F52B148CFB4DD581086FF65 /* Pods-renrendai-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.debug.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C543036D96C43DE8F8EBE5 /* Pods-renrendai-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.release.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.release.xcconfig"; sourceTree = "<group>"; };
+		E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_renrendai_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22229A1022F98A950065B9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C087C7641347D423308833 /* Pods_renrendai_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A2422F98A960065B9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A2F22F98A960065B9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22229A0A22F98A950065B9F6 = {
+			isa = PBXGroup;
+			children = (
+				22229A1522F98A950065B9F6 /* renrendai-swift */,
+				22229A2A22F98A960065B9F6 /* renrendai-swiftTests */,
+				22229A3522F98A960065B9F6 /* renrendai-swiftUITests */,
+				22229A1422F98A950065B9F6 /* Products */,
+				A42044CF05904625A0BF8455 /* Pods */,
+				776E9C4B548DF222397DAEFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22229A1422F98A950065B9F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22229A1322F98A950065B9F6 /* renrendai-swift.app */,
+				22229A2722F98A960065B9F6 /* renrendai-swiftTests.xctest */,
+				22229A3222F98A960065B9F6 /* renrendai-swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22229A1522F98A950065B9F6 /* renrendai-swift */ = {
+			isa = PBXGroup;
+			children = (
+				22229A5322FAD6420065B9F6 /* Utils */,
+				22229A4422FAC6DF0065B9F6 /* Class */,
+				22229A1622F98A950065B9F6 /* AppDelegate.swift */,
+				22229A1A22F98A950065B9F6 /* Main.storyboard */,
+				22229A1D22F98A960065B9F6 /* Assets.xcassets */,
+				22229A1F22F98A960065B9F6 /* LaunchScreen.storyboard */,
+				22229A2222F98A960065B9F6 /* Info.plist */,
+				22251AA923016165008A8DD1 /* renrendai-swift-Bridging-Header.h */,
+			);
+			path = "renrendai-swift";
+			sourceTree = "<group>";
+		};
+		22229A2A22F98A960065B9F6 /* renrendai-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				22229A2B22F98A960065B9F6 /* renrendai_swiftTests.swift */,
+				22229A2D22F98A960065B9F6 /* Info.plist */,
+			);
+			path = "renrendai-swiftTests";
+			sourceTree = "<group>";
+		};
+		22229A3522F98A960065B9F6 /* renrendai-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22229A3622F98A960065B9F6 /* renrendai_swiftUITests.swift */,
+				22229A3822F98A960065B9F6 /* Info.plist */,
+			);
+			path = "renrendai-swiftUITests";
+			sourceTree = "<group>";
+		};
+		22229A4422FAC6DF0065B9F6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4722FAC7240065B9F6 /* Base */,
+				22229A4522FAC6FE0065B9F6 /* Login */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		22229A4522FAC6FE0065B9F6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4622FAC7080065B9F6 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22229A4622FAC7080065B9F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22229A5122FAC8D90065B9F6 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22229A4722FAC7240065B9F6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4A22FAC7570065B9F6 /* TabbarController */,
+				22229A4922FAC74B0065B9F6 /* NavController */,
+				22229A4822FAC72F0065B9F6 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22229A4822FAC72F0065B9F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4B22FAC7D10065B9F6 /* BaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22229A4922FAC74B0065B9F6 /* NavController */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4D22FAC8240065B9F6 /* BaseNavigationController.swift */,
+			);
+			path = NavController;
+			sourceTree = "<group>";
+		};
+		22229A4A22FAC7570065B9F6 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				22229A4F22FAC8840065B9F6 /* BaseTabbarController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		22229A5322FAD6420065B9F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2229FDB62303EF720021F628 /* PickerManager */,
+				2229FDAF2302B4D60021F628 /* Utils.swift */,
+				2229FDAE2302B4B10021F628 /* Alert */,
+				2229FDAD2302AD910021F628 /* ScreenFit */,
+				225DABDC22FD681E009A4894 /* JSONKit */,
+				22229A5F22FADAA00065B9F6 /* NetWork */,
+				22229A5422FAD6530065B9F6 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		22229A5422FAD6530065B9F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22229A5722FAD7230065B9F6 /* NSDate-Extension.swift */,
+				22229A5522FAD7230065B9F6 /* NSString-Extension.swift */,
+				22229A5622FAD7230065B9F6 /* UIColor-Extension.swift */,
+				22229A5D22FAD9C40065B9F6 /* UIView-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		22229A5F22FADAA00065B9F6 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				225DABD822FD0EFB009A4894 /* XCNetwork.swift */,
+				225DABE122FD78BB009A4894 /* res.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		2229FDAD2302AD910021F628 /* ScreenFit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenFit;
+			sourceTree = "<group>";
+		};
+		2229FDAE2302B4B10021F628 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				2229FDB12302B4E50021F628 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		2229FDB62303EF720021F628 /* PickerManager */ = {
+			isa = PBXGroup;
+			children = (
+				2229FDB72303EF8D0021F628 /* XCPickerManager.swift */,
+				2229FDB92303F6A50021F628 /* XCDatePicker.swift */,
+			);
+			path = PickerManager;
+			sourceTree = "<group>";
+		};
+		225DABDC22FD681E009A4894 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				225DABDF22FD68D1009A4894 /* CleanJSON.swift */,
+				225DABDD22FD683B009A4894 /* JSONKit.swift */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		776E9C4B548DF222397DAEFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A42044CF05904625A0BF8455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F52B148CFB4DD581086FF65 /* Pods-renrendai-swift.debug.xcconfig */,
+				E0C543036D96C43DE8F8EBE5 /* Pods-renrendai-swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22229A1222F98A950065B9F6 /* renrendai-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22229A3B22F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swift" */;
+			buildPhases = (
+				4E1EAD5A2D2F46A77E6C3451 /* [CP] Check Pods Manifest.lock */,
+				22229A0F22F98A950065B9F6 /* Sources */,
+				22229A1022F98A950065B9F6 /* Frameworks */,
+				22229A1122F98A950065B9F6 /* Resources */,
+				A56F996FAEE72E93503E856D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "renrendai-swift";
+			productName = "renrendai-swift";
+			productReference = 22229A1322F98A950065B9F6 /* renrendai-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22229A2622F98A960065B9F6 /* renrendai-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22229A3E22F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swiftTests" */;
+			buildPhases = (
+				22229A2322F98A960065B9F6 /* Sources */,
+				22229A2422F98A960065B9F6 /* Frameworks */,
+				22229A2522F98A960065B9F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22229A2922F98A960065B9F6 /* PBXTargetDependency */,
+			);
+			name = "renrendai-swiftTests";
+			productName = "renrendai-swiftTests";
+			productReference = 22229A2722F98A960065B9F6 /* renrendai-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22229A3122F98A960065B9F6 /* renrendai-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22229A4122F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swiftUITests" */;
+			buildPhases = (
+				22229A2E22F98A960065B9F6 /* Sources */,
+				22229A2F22F98A960065B9F6 /* Frameworks */,
+				22229A3022F98A960065B9F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22229A3422F98A960065B9F6 /* PBXTargetDependency */,
+			);
+			name = "renrendai-swiftUITests";
+			productName = "renrendai-swiftUITests";
+			productReference = 22229A3222F98A960065B9F6 /* renrendai-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22229A0B22F98A950065B9F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = VIC;
+				TargetAttributes = {
+					22229A1222F98A950065B9F6 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					22229A2622F98A960065B9F6 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 22229A1222F98A950065B9F6;
+					};
+					22229A3122F98A960065B9F6 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 22229A1222F98A950065B9F6;
+					};
+				};
+			};
+			buildConfigurationList = 22229A0E22F98A950065B9F6 /* Build configuration list for PBXProject "renrendai-swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22229A0A22F98A950065B9F6;
+			productRefGroup = 22229A1422F98A950065B9F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22229A1222F98A950065B9F6 /* renrendai-swift */,
+				22229A2622F98A960065B9F6 /* renrendai-swiftTests */,
+				22229A3122F98A960065B9F6 /* renrendai-swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22229A1122F98A950065B9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22229A2122F98A960065B9F6 /* LaunchScreen.storyboard in Resources */,
+				22229A1E22F98A960065B9F6 /* Assets.xcassets in Resources */,
+				22229A1C22F98A950065B9F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A2522F98A960065B9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A3022F98A960065B9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E1EAD5A2D2F46A77E6C3451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-renrendai-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A56F996FAEE72E93503E856D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22229A0F22F98A950065B9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225DABD922FD0EFB009A4894 /* XCNetwork.swift in Sources */,
+				22229A5022FAC8840065B9F6 /* BaseTabbarController.swift in Sources */,
+				22229A1722F98A950065B9F6 /* AppDelegate.swift in Sources */,
+				2229FDB22302B4E50021F628 /* Alert.swift in Sources */,
+				2229FDB82303EF8D0021F628 /* XCPickerManager.swift in Sources */,
+				22229A5A22FAD7230065B9F6 /* NSDate-Extension.swift in Sources */,
+				22229A5E22FAD9C40065B9F6 /* UIView-Extension.swift in Sources */,
+				225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */,
+				22229A4C22FAC7D10065B9F6 /* BaseViewController.swift in Sources */,
+				2229FDB02302B4D60021F628 /* Utils.swift in Sources */,
+				22229A4E22FAC8240065B9F6 /* BaseNavigationController.swift in Sources */,
+				225DABDE22FD683B009A4894 /* JSONKit.swift in Sources */,
+				22229A5222FAC8D90065B9F6 /* LoginController.swift in Sources */,
+				22229A5922FAD7230065B9F6 /* UIColor-Extension.swift in Sources */,
+				2229FDBA2303F6A50021F628 /* XCDatePicker.swift in Sources */,
+				22229A5822FAD7230065B9F6 /* NSString-Extension.swift in Sources */,
+				225DABE222FD78BB009A4894 /* res.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A2322F98A960065B9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22229A2C22F98A960065B9F6 /* renrendai_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22229A2E22F98A960065B9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22229A3722F98A960065B9F6 /* renrendai_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22229A2922F98A960065B9F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22229A1222F98A950065B9F6 /* renrendai-swift */;
+			targetProxy = 22229A2822F98A960065B9F6 /* PBXContainerItemProxy */;
+		};
+		22229A3422F98A960065B9F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22229A1222F98A950065B9F6 /* renrendai-swift */;
+			targetProxy = 22229A3322F98A960065B9F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22229A1A22F98A950065B9F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22229A1B22F98A950065B9F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22229A1F22F98A960065B9F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22229A2022F98A960065B9F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22229A3922F98A960065B9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22229A3A22F98A960065B9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22229A3C22F98A960065B9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F52B148CFB4DD581086FF65 /* Pods-renrendai-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "renrendai-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "renrendai-swift/renrendai-swift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22229A3D22F98A960065B9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C543036D96C43DE8F8EBE5 /* Pods-renrendai-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "renrendai-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "renrendai-swift/renrendai-swift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22229A3F22F98A960065B9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC74LCWLVF;
+				INFOPLIST_FILE = "renrendai-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/renrendai-swift.app/renrendai-swift";
+			};
+			name = Debug;
+		};
+		22229A4022F98A960065B9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC74LCWLVF;
+				INFOPLIST_FILE = "renrendai-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/renrendai-swift.app/renrendai-swift";
+			};
+			name = Release;
+		};
+		22229A4222F98A960065B9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC74LCWLVF;
+				INFOPLIST_FILE = "renrendai-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "renrendai-swift";
+			};
+			name = Debug;
+		};
+		22229A4322F98A960065B9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC74LCWLVF;
+				INFOPLIST_FILE = "renrendai-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "viczxc.renrendai-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "renrendai-swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22229A0E22F98A950065B9F6 /* Build configuration list for PBXProject "renrendai-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22229A3922F98A960065B9F6 /* Debug */,
+				22229A3A22F98A960065B9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22229A3B22F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22229A3C22F98A960065B9F6 /* Debug */,
+				22229A3D22F98A960065B9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22229A3E22F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22229A3F22F98A960065B9F6 /* Debug */,
+				22229A4022F98A960065B9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22229A4122F98A960065B9F6 /* Build configuration list for PBXNativeTarget "renrendai-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22229A4222F98A960065B9F6 /* Debug */,
+				22229A4322F98A960065B9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22229A0B22F98A950065B9F6 /* Project object */;
+}
