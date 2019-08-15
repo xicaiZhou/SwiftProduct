@@ -15,12 +15,12 @@ class BaseTabbarController: UITabBarController {
         super.viewDidLoad()
 
         //去掉UITabbar原有的选染色
-        UITabBar.appearance().isTranslucent = false
-        
-        view.backgroundColor = UIColor.white
-        tabBar.backgroundColor = UIColor.white
-        UITabBar.appearance().shadowImage = UIImage()
-        UITabBar.appearance().backgroundImage = UIImage()
+//        UITabBar.appearance().isTranslucent = false
+//
+//        view.backgroundColor = UIColor.white
+//        tabBar.backgroundColor = UIColor.white
+//        UITabBar.appearance().shadowImage = UIImage()
+//        UITabBar.appearance().backgroundImage = UIImage()
         
         
         initTabbar()
@@ -41,8 +41,9 @@ class BaseTabbarController: UITabBarController {
         
         // ....
         //addChild(<#T##childController: UIViewController##UIViewController#>, title: <#T##String#>, imageNmae: <#T##String#>)
-        
-        
+        addChild(MainViewController.init(), title: "1111", imageName: "icon_tabbar_complex")
+        addChild(LoginController.init(), title: "1111", imageName: "icon_tabbar_complex")
+
     }
     
     func addChild(_ childController: UIViewController, title: String, imageName: String) {

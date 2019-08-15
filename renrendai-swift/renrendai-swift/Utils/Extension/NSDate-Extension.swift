@@ -54,9 +54,9 @@ extension Date{
     
 }
 
-extension NSDate {
+extension Date {
     
-    class func getCurrentTime() -> String {
+    static func getCurrentTime() -> String {
         
         let nowDate = NSDate()
         
@@ -72,7 +72,7 @@ extension NSDate {
     ///   - dateStr: Date字符串
     ///   - formatter: 格式
     /// - Returns: Date
-    class func dateWithDateStr(_ dateStr : String, formatter:String) -> Date {
+    static func dateWithDateStr(_ dateStr : String, formatter:String) -> Date {
         
         let format = DateFormatter()
         format.dateFormat = formatter

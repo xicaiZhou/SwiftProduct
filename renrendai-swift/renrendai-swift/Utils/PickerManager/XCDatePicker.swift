@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 import SnapKit
 
-fileprivate let YLDatePickerMargin:CGFloat = 8
-fileprivate let YLDatePickerH:CGFloat = 270
+fileprivate let XCDatePickerMargin:CGFloat = 8
+fileprivate let XCDatePickerH:CGFloat = 270
 typealias DoneBlock = (Date) -> ()
 
 // 显示时间类型
-public enum YLDatePickerType:String {
+public enum XCDatePickerType:String {
     case YM      // 年月
     case MD      // 月日
     case YMD     // 年月日
@@ -25,7 +25,7 @@ public enum YLDatePickerType:String {
 }
 
 /// 记录
-struct YLDateRecord {
+struct XCDateRecord {
     var year: String
     var month: String
     var day: String
@@ -33,18 +33,18 @@ struct YLDateRecord {
     var minute: String
 }
 /// 类型
-enum YLDateComponent:Int {
+enum XCDateComponent:Int {
     case year,month,day,hour,minute
 }
 
-public class YLDatePicker: UIView {
+public class XCDatePicker: UIView {
     
     fileprivate var doneBlock: DoneBlock?
     
-    fileprivate var dataArray = [YLDateComponent:Array<String>]()
-    fileprivate var dateComponentOrder = [YLDateComponent]()
-    fileprivate var dateRecord: YLDateRecord!
-    fileprivate var datePickerType: YLDatePickerType = .YMD // default 年月日
+    fileprivate var dataArray = [XCDateComponent:Array<String>]()
+    fileprivate var dateComponentOrder = [XCDateComponent]()
+    fileprivate var dateRecord: XCDateRecord!
+    fileprivate var datePickerType: XCDatePickerType = .YMD // default 年月日
     
     fileprivate var datePicker: UIPickerView = {
         let datePicker = UIPickerView()
@@ -55,7 +55,7 @@ public class YLDatePicker: UIView {
     fileprivate var backWindow: UIWindow = {
         let backWindow = UIWindow(frame: UIScreen.main.bounds)
         backWindow.windowLevel = UIWindow.Level.statusBar
-        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.3)
+        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.9)
         backWindow.isHidden = true
         return backWindow
     }()
@@ -71,7 +71,7 @@ public class YLDatePicker: UIView {
     fileprivate var minLimitDate = Date.init(timeIntervalSince1970: TimeInterval(0)) // 默认最小时间
     fileprivate var maxLimitDate = Date.init(timeIntervalSince1970: TimeInterval(9999999999)) // 默认最大时间
     
-    convenience init(currentDate: Date?, minLimitDate: Date?, maxLimitDate: Date?, datePickerType: YLDatePickerType?, _ doneBlock: @escaping DoneBlock) {
+    convenience init(currentDate: Date?, minLimitDate: Date?, maxLimitDate: Date?, datePickerType: XCDatePickerType?, _ doneBlock: @escaping DoneBlock) {
         self.init()
         
         self.doneBlock = doneBlock
@@ -82,7 +82,7 @@ public class YLDatePicker: UIView {
         let scrollToDay = addZero(currentDate.Day)
         let scrollToHour = addZero(currentDate.Hour)
         let scrollToMinute = addZero(currentDate.Minute)
-        dateRecord = YLDateRecord(year: scrollToYear, month: scrollToMonth, day: scrollToDay, hour: scrollToHour, minute: scrollToMinute)
+        dateRecord = XCDateRecord(year: scrollToYear, month: scrollToMonth, day: scrollToDay, hour: scrollToHour, minute: scrollToMinute)
         
         if let minLimitDate = minLimitDate {
             self.minLimitDate = minLimitDate
@@ -109,8 +109,8 @@ public class YLDatePicker: UIView {
         addSubview(backLabel)
         backLabel.snp.makeConstraints { (make) in
             
-            make.top.left.right.equalToSuperview()
-            make.height.equalTo(100)
+            make.top.left.right.bottom.equalToSuperview()
+//            make.height.equalTo(100)
         }
         
         // 时间控件
@@ -127,7 +127,7 @@ public class YLDatePicker: UIView {
         let doneButton = UIButton(type: .custom)
         doneButton.setTitle("确定", for: .normal)
         doneButton.backgroundColor = UIColor.orange
-        doneButton.addTarget(self, action: #selector(YLDatePicker.doneButtonHandle), for: .touchUpInside)
+        doneButton.addTarget(self, action: #selector(XCDatePicker.doneButtonHandle), for: .touchUpInside)
         addSubview(doneButton)
         doneButton.snp.makeConstraints { (make) in
             
@@ -176,11 +176,9 @@ public class YLDatePicker: UIView {
     }
     
     @objc func doneButtonHandle() {
-        
-        if let date = Date.getDate(dateStr: "\(dateRecord.year)-\(dateRecord.month)-\(dateRecord.day) \(dateRecord.hour):\(dateRecord.minute)", format: "yyyy-MM-dd HH:mm") {
-            
+        let dateStr = "\(dateRecord.year)-\(dateRecord.month)-\(dateRecord.day) \(dateRecord.hour):\(dateRecord.minute)"
+        let date :Date = Date.dateWithDateStr(dateStr,formatter: "yyyy-MM-dd HH:mm")
             doneBlock?(date)
-        }
         
         dismiss()
     }
@@ -190,7 +188,7 @@ public class YLDatePicker: UIView {
         backWindow.addSubview(self)
         backWindow.makeKeyAndVisible()
         
-        frame = CGRect.init(x: YLDatePickerMargin, y: backWindow.frame.height, width: backWindow.frame.width - YLDatePickerMargin*2, height: YLDatePickerH)
+        frame = CGRect.init(x: XCDatePickerMargin, y: backWindow.frame.height, width: backWindow.frame.width - XCDatePickerMargin*2, height: XCDatePickerH)
         
         UIView.animate(withDuration: 0.3) {
             
@@ -199,14 +197,14 @@ public class YLDatePicker: UIView {
                 bottom = 44
             }
             
-            self.frame = CGRect.init(x: YLDatePickerMargin, y: self.backWindow.frame.height - YLDatePickerH - bottom, width: self.backWindow.frame.width - YLDatePickerMargin*2, height: YLDatePickerH)
+            self.frame = CGRect.init(x: XCDatePickerMargin, y: self.backWindow.frame.height - XCDatePickerH - bottom, width: self.backWindow.frame.width - XCDatePickerMargin*2, height: XCDatePickerH)
         }
     }
     
     @objc public func dismiss() {
         
         UIView.animate(withDuration: 0.3, animations: {
-            self.frame = CGRect.init(x: YLDatePickerMargin, y: self.backWindow.frame.height, width: self.backWindow.frame.width - YLDatePickerMargin*2, height: YLDatePickerH)
+            self.frame = CGRect.init(x: XCDatePickerMargin, y: self.backWindow.frame.height, width: self.backWindow.frame.width - XCDatePickerMargin*2, height: XCDatePickerH)
         }) { (_) in
             self.removeFromSuperview()
             self.backWindow.resignKey()
@@ -214,7 +212,7 @@ public class YLDatePicker: UIView {
     }
 }
 
-extension YLDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
+extension XCDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return dataArray.count
     }
@@ -251,7 +249,7 @@ extension YLDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
 }
 
 // MARK: - 工具
-extension YLDatePicker {
+extension XCDatePicker {
     
     func addZero(_ num: Int) -> String {
         return num < 10 ? ("0" + String(num)):String(num)
@@ -358,7 +356,7 @@ extension YLDatePicker {
         }
     }
     // 滚动到指定时间
-    func scrollToDate(components:[YLDateComponent], animated: Bool) {
+    func scrollToDate(components:[XCDateComponent], animated: Bool) {
         
         for c in components {
             
@@ -386,11 +384,11 @@ extension YLDatePicker {
         }
     }
     // 刷新数据
-    func reload(dateComponent:YLDateComponent) {
+    func reload(dateComponent:XCDateComponent) {
         
         guard let index = dateComponentOrder.index(of: dateComponent) else {return}
         
-        var components = [YLDateComponent]()
+        var components = [XCDateComponent]()
         
         for (i,c) in dateComponentOrder.enumerated() {
             if i > index {

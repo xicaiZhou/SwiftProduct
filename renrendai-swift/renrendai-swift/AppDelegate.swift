@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds);
         self.window?.backgroundColor = UIColor.white;
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = BaseNavigationController(rootViewController: LoginController.init());
-        
+//        self.window?.rootViewController = BaseNavigationController(rootViewController: LoginController.init());
+        self.window?.rootViewController = BaseTabbarController.init();
+
         
         
         XCNetWorkTools.share.detectNetwork { (status) in

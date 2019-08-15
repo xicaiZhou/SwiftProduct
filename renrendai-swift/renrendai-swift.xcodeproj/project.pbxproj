@@ -25,6 +25,7 @@
 		2229FDB22302B4E50021F628 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB12302B4E50021F628 /* Alert.swift */; };
 		2229FDB82303EF8D0021F628 /* XCPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB72303EF8D0021F628 /* XCPickerManager.swift */; };
 		2229FDBA2303F6A50021F628 /* XCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDB92303F6A50021F628 /* XCDatePicker.swift */; };
+		2229FDF823055A760021F628 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FDF723055A760021F628 /* MainViewController.swift */; };
 		225DABD922FD0EFB009A4894 /* XCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABD822FD0EFB009A4894 /* XCNetwork.swift */; };
 		225DABDE22FD683B009A4894 /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDD22FD683B009A4894 /* JSONKit.swift */; };
 		225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDF22FD68D1009A4894 /* CleanJSON.swift */; };
@@ -75,6 +76,7 @@
 		2229FDB12302B4E50021F628 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2229FDB72303EF8D0021F628 /* XCPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCPickerManager.swift; sourceTree = "<group>"; };
 		2229FDB92303F6A50021F628 /* XCDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDatePicker.swift; sourceTree = "<group>"; };
+		2229FDF723055A760021F628 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		225DABD822FD0EFB009A4894 /* XCNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCNetwork.swift; sourceTree = "<group>"; };
 		225DABDD22FD683B009A4894 /* JSONKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
 		225DABDF22FD68D1009A4894 /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		22229A4422FAC6DF0065B9F6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2229FDF523054F7F0021F628 /* Main */,
 				22229A4722FAC7240065B9F6 /* Base */,
 				22229A4522FAC6FE0065B9F6 /* Login */,
 			);
@@ -280,6 +283,22 @@
 				2229FDB92303F6A50021F628 /* XCDatePicker.swift */,
 			);
 			path = PickerManager;
+			sourceTree = "<group>";
+		};
+		2229FDF523054F7F0021F628 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2229FDF623055A530021F628 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2229FDF623055A530021F628 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2229FDF723055A760021F628 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		225DABDC22FD681E009A4894 /* JSONKit */ = {
@@ -498,6 +517,7 @@
 				22229A5222FAC8D90065B9F6 /* LoginController.swift in Sources */,
 				22229A5922FAD7230065B9F6 /* UIColor-Extension.swift in Sources */,
 				2229FDBA2303F6A50021F628 /* XCDatePicker.swift in Sources */,
+				2229FDF823055A760021F628 /* MainViewController.swift in Sources */,
 				22229A5822FAD7230065B9F6 /* NSString-Extension.swift in Sources */,
 				225DABE222FD78BB009A4894 /* res.swift in Sources */,
 			);
