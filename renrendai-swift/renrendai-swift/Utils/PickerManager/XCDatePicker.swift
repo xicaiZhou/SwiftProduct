@@ -55,7 +55,7 @@ public class XCDatePicker: UIView {
     fileprivate var backWindow: UIWindow = {
         let backWindow = UIWindow(frame: UIScreen.main.bounds)
         backWindow.windowLevel = UIWindow.Level.statusBar
-        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.9)
+        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.2)
         backWindow.isHidden = true
         return backWindow
     }()
@@ -110,7 +110,6 @@ public class XCDatePicker: UIView {
         backLabel.snp.makeConstraints { (make) in
             
             make.top.left.right.bottom.equalToSuperview()
-//            make.height.equalTo(100)
         }
         
         // 时间控件
@@ -131,7 +130,7 @@ public class XCDatePicker: UIView {
         addSubview(doneButton)
         doneButton.snp.makeConstraints { (make) in
             
-            make.top.left.right.equalToSuperview()
+            make.bottom.left.right.equalToSuperview()
             make.height.equalTo(54)
 
         }
@@ -193,7 +192,7 @@ public class XCDatePicker: UIView {
         UIView.animate(withDuration: 0.3) {
             
             var bottom:CGFloat = 0
-            if UIScreen.main.bounds.height == 812 {
+            if isiPhoneX {
                 bottom = 44
             }
             
