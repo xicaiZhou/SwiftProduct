@@ -94,7 +94,8 @@ public class XCDatePicker: UIView {
             self.datePickerType = datePickerType
         }
         
-        layoutUI()
+       
+        
         
         loadData()
     }

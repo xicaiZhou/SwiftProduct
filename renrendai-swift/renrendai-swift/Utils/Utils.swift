@@ -60,6 +60,11 @@ class Utils{
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     }
     
+    class func getFilePath(fileName: String, ofType: String) ->(String){
+        return  Bundle.main.path(forResource: fileName, ofType: ofType)!
+    }
+    
+    
     /// 获取buildID
     class func appBuildID() -> String{
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String

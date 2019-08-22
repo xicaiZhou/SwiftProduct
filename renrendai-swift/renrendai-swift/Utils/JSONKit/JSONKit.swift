@@ -105,7 +105,7 @@ extension Array {
         print("dict转json失败")
         return nil
     }
-    
+
     func mapFromJson<T : Decodable>(_ type:[T].Type) throws -> Array<T> {
         guard let JSONString = self.toJSONString() else {
             print(MapError.dictToJsonFail)

@@ -11,3 +11,4 @@ import Foundation
 struct resData : Mappable{
     var payed: Float
 }
+
