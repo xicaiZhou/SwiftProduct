@@ -55,7 +55,7 @@ public class XCDatePicker: UIView {
     fileprivate var backWindow: UIWindow = {
         let backWindow = UIWindow(frame: UIScreen.main.bounds)
         backWindow.windowLevel = UIWindow.Level.statusBar
-        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.2)
+        backWindow.backgroundColor = UIColor(white: 0, alpha: 0.3)
         backWindow.isHidden = true
         return backWindow
     }()
@@ -94,8 +94,7 @@ public class XCDatePicker: UIView {
             self.datePickerType = datePickerType
         }
         
-       
-        
+        layoutUI()
         
         loadData()
     }
@@ -109,8 +108,8 @@ public class XCDatePicker: UIView {
         // 背景文字
         addSubview(backLabel)
         backLabel.snp.makeConstraints { (make) in
-            
-            make.top.left.right.bottom.equalToSuperview()
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(54)
         }
         
         // 时间控件
@@ -120,7 +119,8 @@ public class XCDatePicker: UIView {
         addSubview(datePicker)
         datePicker.snp.makeConstraints { (make) in
             
-            make.top.left.right.equalToSuperview()
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(54)
         }
         
         // 按钮
@@ -131,9 +131,9 @@ public class XCDatePicker: UIView {
         addSubview(doneButton)
         doneButton.snp.makeConstraints { (make) in
             
-            make.bottom.left.right.equalToSuperview()
+            make.top.left.right.equalToSuperview()
             make.height.equalTo(54)
-
+            
         }
         
         
@@ -178,7 +178,7 @@ public class XCDatePicker: UIView {
     @objc func doneButtonHandle() {
         let dateStr = "\(dateRecord.year)-\(dateRecord.month)-\(dateRecord.day) \(dateRecord.hour):\(dateRecord.minute)"
         let date :Date = Date.dateWithDateStr(dateStr,formatter: "yyyy-MM-dd HH:mm")
-            doneBlock?(date)
+        doneBlock?(date)
         
         dismiss()
     }
@@ -188,7 +188,7 @@ public class XCDatePicker: UIView {
         backWindow.addSubview(self)
         backWindow.makeKeyAndVisible()
         
-        frame = CGRect.init(x: XCDatePickerMargin, y: backWindow.frame.height, width: backWindow.frame.width - XCDatePickerMargin*2, height: XCDatePickerH)
+        frame = CGRect.init(x: XCDatePickerMargin, y: backWindow.frame.height, width: backWindow.frame.width - XCDatePickerMargin * 2, height: XCDatePickerH)
         
         UIView.animate(withDuration: 0.3) {
             

@@ -40,11 +40,11 @@ class MainViewController: BaseViewController {
     }
     
     @objc func address() {
-//
-//        XCAddressPicker.init(type: .PC) { (address) in
-//            print(address)
-//        }.show()
-//        
+        
+        XCAddressPicker.init(type: .PC) { (address) in
+            print(address)
+        }.show()
+        
         XCAddressPicker.getAddressFormAddressId(addressID: "340000-340100", separator: "-") { (address) in
             print(address)
 

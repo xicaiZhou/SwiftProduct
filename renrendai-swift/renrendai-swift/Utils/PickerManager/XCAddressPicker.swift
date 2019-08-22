@@ -25,10 +25,8 @@ public enum XCAddressPickerType:String {
 class XCAddressPicker: UIView{
     
     fileprivate var dataSource = Array<Province>()
-
     fileprivate var type: XCAddressPickerType = .PCA //default 省市区
     fileprivate var doneBlock: DoneAddressBlock?
-
     fileprivate var indexOne = 0, indexTwo = 0, indexThree = 0
     
     fileprivate var backWindow: UIWindow = {
@@ -72,8 +70,8 @@ extension XCAddressPicker{
         addSubview(pickerView)
         pickerView.snp.makeConstraints { (make) in
             
-            make.top.left.right.equalToSuperview()
-        }
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(54)        }
         
         // 按钮
         let doneButton = UIButton(type: .custom)
@@ -83,7 +81,7 @@ extension XCAddressPicker{
         addSubview(doneButton)
         doneButton.snp.makeConstraints { (make) in
             
-            make.bottom.left.right.equalToSuperview()
+            make.top.left.right.equalToSuperview()
             make.height.equalTo(54)
         }
         
