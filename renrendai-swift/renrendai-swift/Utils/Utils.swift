@@ -21,8 +21,8 @@ let isiPhoneX :Bool = UIApplication.shared.statusBarFrame.height >= 44
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 let KStatusHeight = UIApplication.shared.statusBarFrame.size.height
-let KHeight_NavBar = isiPhoneX ? 88.0 : 64.0
-let KHeight_TabBat = isiPhoneX ? 83.0 : 49.0
+let KHeight_NavBar: CGFloat = isiPhoneX ? 88.0 : 64.0
+let KHeight_TabBat: CGFloat = isiPhoneX ? 83.0 : 49.0
 
 
 //GCD - 返回主线程

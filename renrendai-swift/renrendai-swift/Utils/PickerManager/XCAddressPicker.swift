@@ -36,6 +36,7 @@ class XCAddressPicker: UIView{
         backWindow.isHidden = true
         return backWindow
     }()
+    
     fileprivate var pickerView: UIPickerView = {
         let pickerView = UIPickerView()
         pickerView.showsSelectionIndicator = false
@@ -155,8 +156,6 @@ extension XCAddressPicker: UIPickerViewDelegate,UIPickerViewDataSource{
         }
     }
     
-    
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         switch component {
@@ -235,11 +234,7 @@ extension XCAddressPicker: UIPickerViewDelegate,UIPickerViewDataSource{
             indexTwo = 0
             indexThree = 0
         }
-        
-        
-        
     }
-    
     
 }
 extension XCAddressPicker{

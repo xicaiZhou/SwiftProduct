@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22205464230E6955006B2A76 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 22205463230E6955006B2A76 /* address.json */; };
+		22205466230EABEE006B2A76 /* XCPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22205465230EABEE006B2A76 /* XCPickerView.swift */; };
 		22229A1722F98A950065B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22229A1622F98A950065B9F6 /* AppDelegate.swift */; };
 		22229A1C22F98A950065B9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22229A1A22F98A950065B9F6 /* Main.storyboard */; };
 		22229A1E22F98A960065B9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22229A1D22F98A960065B9F6 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		22205463230E6955006B2A76 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
+		22205465230EABEE006B2A76 /* XCPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCPickerView.swift; sourceTree = "<group>"; };
 		22229A1322F98A950065B9F6 /* renrendai-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "renrendai-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22229A1622F98A950065B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22229A1B22F98A950065B9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -235,7 +237,6 @@
 				2229FDB62303EF720021F628 /* PickerManager */,
 				2229FDAF2302B4D60021F628 /* Utils.swift */,
 				2229FDAE2302B4B10021F628 /* Alert */,
-				2229FDAD2302AD910021F628 /* ScreenFit */,
 				225DABDC22FD681E009A4894 /* JSONKit */,
 				22229A5F22FADAA00065B9F6 /* NetWork */,
 				22229A5422FAD6530065B9F6 /* Extension */,
@@ -263,13 +264,6 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
-		2229FDAD2302AD910021F628 /* ScreenFit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ScreenFit;
-			sourceTree = "<group>";
-		};
 		2229FDAE2302B4B10021F628 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +278,7 @@
 				22205463230E6955006B2A76 /* address.json */,
 				2229FDB92303F6A50021F628 /* XCDatePicker.swift */,
 				2229FDF9230698F40021F628 /* XCAddressPicker.swift */,
+				22205465230EABEE006B2A76 /* XCPickerView.swift */,
 			);
 			path = PickerManager;
 			sourceTree = "<group>";
@@ -513,6 +508,7 @@
 				22229A5A22FAD7230065B9F6 /* NSDate-Extension.swift in Sources */,
 				22229A5E22FAD9C40065B9F6 /* UIView-Extension.swift in Sources */,
 				225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */,
+				22205466230EABEE006B2A76 /* XCPickerView.swift in Sources */,
 				22229A4C22FAC7D10065B9F6 /* BaseViewController.swift in Sources */,
 				2229FDB02302B4D60021F628 /* Utils.swift in Sources */,
 				22229A4E22FAC8240065B9F6 /* BaseNavigationController.swift in Sources */,

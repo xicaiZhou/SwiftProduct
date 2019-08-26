@@ -12,16 +12,30 @@ target 'renrendai-swift' do
   
   #Masonry
   pod 'SnapKit'
+  
   # AFNetWorking
   pod 'Alamofire', '~> 4.8'
   pod 'AlamofireImage', '~> 3.5'
+  
   # SDWebImage
   pod 'Kingfisher', '~> 5.5.0'
+  
   # HUD
   pod 'APESuperHUD', :git => 'https://github.com/apegroup/APESuperHUD.git'
+  
   # Toast
   pod 'Toast-Swift', '~> 5.0.0'
+  
   # SegmentControl -> Swift 5
   pod 'BetterSegmentedControl', '~> 1.2'
+  
+  # 图片选择器
+  pod 'HEPhotoPicker'
 
+ 
+ # Reactive X
+ pod 'RxSwift', '~> 5'  #RxSwift标准SwiftApi，不包括任何iOS相关内容
+ pod 'RxCocoa', '~> 5'  #基于RxSwift,主要为iOS控件做RX扩展特性
+ 
+ 
 end
