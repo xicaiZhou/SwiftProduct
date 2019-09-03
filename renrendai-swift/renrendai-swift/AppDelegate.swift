@@ -15,17 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         self.window = UIWindow(frame: UIScreen.main.bounds);
         self.window?.backgroundColor = UIColor.white;
-        self.window?.makeKeyAndVisible()
-//        self.window?.rootViewController = BaseNavigationController(rootViewController: LoginController.init());
-        self.window?.rootViewController = BaseTabbarController.init();
-
-        
-        
-        XCNetWorkTools.share.detectNetwork { (status) in
-            
+        if !Utils.isLogin(){
+            self.window?.rootViewController = BaseNavigationController(rootViewController: LoginController.init());
+        }else {
+            self.window?.rootViewController = BaseTabbarController.init();
         }
+        self.window?.makeKeyAndVisible()
         return true
     }
 

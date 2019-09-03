@@ -14,7 +14,7 @@ typealias successBlock = (Any)->()
 typealias errorBlock = (Any)->()
 typealias NetworkStatus = (_ XCNetworkStatus: Int32) -> ()
 
-private let CurrentNetWork : NetworkEnvironment = .Test
+private let CurrentNetWork : NetworkEnvironment = .Development
 
 private var xcNetworkStatus : XCNetworkStatus = XCNetworkStatus.wifi
 
@@ -66,7 +66,7 @@ private func XCNetwork(network : NetworkEnvironment = CurrentNetWork){
     
     if(network == .Development){
         
-        Base_Url = ""
+        Base_Url = "http://192.168.88.32:8900/rrd/"
         
         
     }else if(network == .Test){
@@ -83,7 +83,9 @@ private func XCNetwork(network : NetworkEnvironment = CurrentNetWork){
 /// 设置请求头
 let headers :HTTPHeaders = [
     "Accept": "application/json",
-    "Content-Type" : "application/json"
+    "Content-Type" : "application/json",
+    "app-version" : Utils.appVersion(),
+    "app-source" : "iOS"
 
 ]
 
@@ -151,13 +153,13 @@ extension XCNetWorkTools {
                         if let value = resJson.result.value {
                             let dic = value as! [String:Any]
                             if dic["code"] as! NSInteger == 200 {
-                               success(dic["data"])
-                            }
-                            else
-                            {
-                                BaseViewController.currentViewController()?.view.makeToast(dic["msg"] as! String)
-                                faild(dic["msg"])
-        
+                               success(dic["data"]!)
+                            }else if dic["code"] as! NSInteger == 999999 {
+                                BaseViewController.currentViewController()?.view.makeToast(dic["msg"] as? String)
+                                faild(dic["msg"] as! String)
+                            }else{
+                                BaseViewController.currentViewController()?.view.makeToast(dic["msg"] as? String)
+                                faild(dic["msg"] as! String)
                             }
                         }
 

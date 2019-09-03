@@ -14,7 +14,6 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.makeToast("This is a piece of toast")
 
         
     }

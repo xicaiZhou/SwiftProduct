@@ -32,10 +32,11 @@ target 'renrendai-swift' do
   # 图片选择器
   pod 'HEPhotoPicker'
 
- 
- # Reactive X
- pod 'RxSwift', '~> 5'  #RxSwift标准SwiftApi，不包括任何iOS相关内容
- pod 'RxCocoa', '~> 5'  #基于RxSwift,主要为iOS控件做RX扩展特性
- 
- 
+  # Reactive X
+  pod 'RxSwift', '~> 5'  #RxSwift标准SwiftApi，不包括任何iOS相关内容
+  pod 'RxCocoa', '~> 5'  #基于RxSwift,主要为iOS控件做RX扩展特性
+  
+  # 数据处理
+  pod 'KakaJSON', '~> 1.1.0'
+
 end

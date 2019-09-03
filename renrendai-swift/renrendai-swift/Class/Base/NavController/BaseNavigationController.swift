@@ -8,12 +8,16 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController {
+class BaseNavigationController: UINavigationController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationBar.backgroundColor = UIColor.clear
+        self.navigationBar.barTintColor = UIColor.clear
+        self.navigationBar.setBackgroundImage(UIImage(named: "nav_bar_bg"), for: .default)
+        self.navigationBar.titleTextAttributes = {[ NSAttributedString.Key.foregroundColor: UIColor.white,
+                                                    NSAttributedString.Key.font: UIFont(name: "Heiti SC", size: 24.0)!]}()
 
-        // Do any additional setup after loading the view.
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

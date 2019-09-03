@@ -40,10 +40,6 @@ func after(_ seconds: Int, _ afterToDo: @escaping ()->()) {
     }
 }
 
-
-
-
-
 class Utils{
     
     /// 打电话
@@ -64,7 +60,6 @@ class Utils{
         return  Bundle.main.path(forResource: fileName, ofType: ofType)!
     }
     
-    
     /// 获取buildID
     class func appBuildID() -> String{
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
@@ -74,19 +69,50 @@ class Utils{
     class func UUID() ->String{
         return (UIDevice.current.identifierForVendor?.uuidString)!
     }
+    
     /// NSUserDefault --- save
     class func userDefaultSave(Key: String, Value: Any){
         return UserDefaults.standard.setValue(Value, forKey: Key)
     }
+    
     /// NSUserDefault --- read
-    class func userDefaultRead(key:String) -> String{
-        return UserDefaults.standard.object(forKey: key) as! String
-        
+    class func userDefaultRead(key:String) -> Any{
+        return UserDefaults.standard.object(forKey: key) as Any
     }
+    
+    /// NSUserDefault --- Remove
     class func userDefaultRemove(key: String) {
          UserDefaults.standard.removeObject(forKey: key)
          UserDefaults.standard.synchronize()
-        
+    }
+    
+    /// NSUserDefault --- saveUserInfo
+    class func saveUserInfo(info: Any) {
+        Utils.userDefaultSave(Key: "USER", Value: info)
+    }
+    
+    /// NSUserDefault --- getUserInfo
+    class func getUserInfo() -> UserModel {
+        return ((Utils.userDefaultRead(key: "USER")) as! [String: Any]).kj.model(UserModel.self)
+    }
+    
+    /// NSUserDefault --- cleanUserInfo
+    class func cleanUserInfo(){
+        return Utils.userDefaultRemove(key: "USER")
+    }
+    
+    /// NSUserDefault --- getToken
+    class func getToken() ->String{
+        return getUserInfo().token
+    }
+    
+    /// NSUserDefault --- isLogin?
+    class func isLogin() ->Bool {
+        var isLogin = false
+        let token = self.getToken()
+        print("token:", token)
+        isLogin = token.count > 0 ? true : false
+        return isLogin
     }
     /// mark RGB -> UIColor
     class func colorFromRGB(colorStr: String, alpha: CGFloat) -> UIColor{

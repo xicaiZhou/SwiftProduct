@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-
+import KakaJSON
 
 
 class LoginController: BaseViewController {
@@ -18,32 +18,43 @@ class LoginController: BaseViewController {
         self.view.backgroundColor = UIColor.purple;
         // Do any additional setup after loading the view.
         
+        
+        after(5) {
+            let param : Dictionary = ["phoneNumber":"15590284773","password":"21218cca77804d2ba1922c33e0151105"];
+            XCNetWorkTools.share.requestData(type: .post, api: "user/login", encoding: .JSON, parameters: param, success: { (res) in
+                
+                Utils.saveUserInfo(info: res)
+                self.pushTabViewController()
+            }) { (errorInfo) in
+                
+            }
+        }
 
-//        let param : Dictionary = ["phoneNumber":"15590284773","password":"21218cca77804d2ba1922c33e0151105"];
-//        XCNetWorkTools.share.requestData(type: .post, api: "user/login", encoding: .JSON, parameters: param, success: { (res) in
+        
+//
+
+
+//        XCNetWorkTools.share.requestData(type: .get, api: "wallet/detail", encoding: .URL, success: { (value) in
+//
+//            print(value)
+//            let dic = value as! [String:Any]
+//            print(dic)
+//            let model:resData = try! resData.mapFromDict(value as! [String : Any], resData.self)
+//            print(model.payed)
 //
 //
-//        }) { (errorInfo) in
+//        }) { (info) in
 //
-//        }
-//        
-
-
-        XCNetWorkTools.share.requestData(type: .get, api: "wallet/detail", encoding: .URL, success: { (value) in
-
-            print(value)
-            let dic = value as! [String:Any]
-            print(dic)
-            let model:resData = try! resData.mapFromDict(value as! [String : Any], resData.self)
-            print(model.payed)
-
-
-        }) { (info) in
-
-        };
+//        };
 //
     }
    
+    func pushTabViewController() {
+        
+        let tabbar = BaseTabbarController()
+        navigationController?.pushViewController(tabbar, animated: true)
+        
+    }
     
 
 

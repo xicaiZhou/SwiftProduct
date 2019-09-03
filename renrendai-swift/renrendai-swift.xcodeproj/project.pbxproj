@@ -32,6 +32,13 @@
 		225DABDE22FD683B009A4894 /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDD22FD683B009A4894 /* JSONKit.swift */; };
 		225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABDF22FD68D1009A4894 /* CleanJSON.swift */; };
 		225DABE222FD78BB009A4894 /* res.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DABE122FD78BB009A4894 /* res.swift */; };
+		22BCCD712319005E00AA0CD5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD702319005E00AA0CD5 /* OrderViewController.swift */; };
+		22BCCD74231900AD00AA0CD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD73231900AD00AA0CD5 /* HomeViewController.swift */; };
+		22BCCD77231900DA00AA0CD5 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD76231900DA00AA0CD5 /* WalletViewController.swift */; };
+		22BCCD7A23190AC300AA0CD5 /* OrderInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD7923190AC300AA0CD5 /* OrderInfoModel.swift */; };
+		22BCCD7D23190C7900AA0CD5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD7C23190C7900AA0CD5 /* UserModel.swift */; };
+		22BCCD83231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */; };
+		22BCCD85231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */; };
 		A6C087C7641347D423308833 /* Pods_renrendai_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +92,13 @@
 		225DABDD22FD683B009A4894 /* JSONKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
 		225DABDF22FD68D1009A4894 /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
 		225DABE122FD78BB009A4894 /* res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = res.swift; sourceTree = "<group>"; };
+		22BCCD702319005E00AA0CD5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		22BCCD73231900AD00AA0CD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22BCCD76231900DA00AA0CD5 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		22BCCD7923190AC300AA0CD5 /* OrderInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoModel.swift; sourceTree = "<group>"; };
+		22BCCD7C23190C7900AA0CD5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLHJ_CodeLoginView.swift; sourceTree = "<group>"; };
+		22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLHJ_CodeLoginView.xib; sourceTree = "<group>"; };
 		9F52B148CFB4DD581086FF65 /* Pods-renrendai-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.debug.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C543036D96C43DE8F8EBE5 /* Pods-renrendai-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.release.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.release.xcconfig"; sourceTree = "<group>"; };
 		E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_renrendai_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +188,9 @@
 		22229A4422FAC6DF0065B9F6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				22BCCD6E2318FF7B00AA0CD5 /* Order */,
+				22BCCD6D2318FF6F00AA0CD5 /* Home */,
+				22BCCD6C2318FF6800AA0CD5 /* Wallet */,
 				2229FDF523054F7F0021F628 /* Main */,
 				22229A4722FAC7240065B9F6 /* Base */,
 				22229A4522FAC6FE0065B9F6 /* Login */,
@@ -184,6 +201,8 @@
 		22229A4522FAC6FE0065B9F6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				22BCCD81231E656300AA0CD5 /* View */,
+				22BCCD7B23190C6A00AA0CD5 /* Model */,
 				22229A4622FAC7080065B9F6 /* Controller */,
 			);
 			path = Login;
@@ -286,6 +305,7 @@
 		2229FDF523054F7F0021F628 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				22BCCD78231909ED00AA0CD5 /* Model */,
 				2229FDF623055A530021F628 /* Controller */,
 			);
 			path = Main;
@@ -306,6 +326,79 @@
 				225DABDF22FD68D1009A4894 /* CleanJSON.swift */,
 			);
 			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		22BCCD6C2318FF6800AA0CD5 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD75231900BC00AA0CD5 /* Controller */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		22BCCD6D2318FF6F00AA0CD5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD722319009400AA0CD5 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		22BCCD6E2318FF7B00AA0CD5 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD6F2318FF8100AA0CD5 /* Controller */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		22BCCD6F2318FF8100AA0CD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD702319005E00AA0CD5 /* OrderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22BCCD722319009400AA0CD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD73231900AD00AA0CD5 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22BCCD75231900BC00AA0CD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD76231900DA00AA0CD5 /* WalletViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22BCCD78231909ED00AA0CD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD7923190AC300AA0CD5 /* OrderInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BCCD7B23190C6A00AA0CD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD7C23190C7900AA0CD5 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BCCD81231E656300AA0CD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */,
+				22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		776E9C4B548DF222397DAEFD /* Frameworks */ = {
@@ -434,6 +527,7 @@
 				22229A2122F98A960065B9F6 /* LaunchScreen.storyboard in Resources */,
 				22229A1E22F98A960065B9F6 /* Assets.xcassets in Resources */,
 				22205464230E6955006B2A76 /* address.json in Resources */,
+				22BCCD85231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib in Resources */,
 				22229A1C22F98A950065B9F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,16 +597,22 @@
 			files = (
 				225DABD922FD0EFB009A4894 /* XCNetwork.swift in Sources */,
 				22229A5022FAC8840065B9F6 /* BaseTabbarController.swift in Sources */,
+				22BCCD7A23190AC300AA0CD5 /* OrderInfoModel.swift in Sources */,
 				22229A1722F98A950065B9F6 /* AppDelegate.swift in Sources */,
 				2229FDB22302B4E50021F628 /* Alert.swift in Sources */,
 				22229A5A22FAD7230065B9F6 /* NSDate-Extension.swift in Sources */,
+				22BCCD77231900DA00AA0CD5 /* WalletViewController.swift in Sources */,
 				22229A5E22FAD9C40065B9F6 /* UIView-Extension.swift in Sources */,
+				22BCCD74231900AD00AA0CD5 /* HomeViewController.swift in Sources */,
 				225DABE022FD68D1009A4894 /* CleanJSON.swift in Sources */,
 				22205466230EABEE006B2A76 /* XCPickerView.swift in Sources */,
 				22229A4C22FAC7D10065B9F6 /* BaseViewController.swift in Sources */,
+				22BCCD712319005E00AA0CD5 /* OrderViewController.swift in Sources */,
 				2229FDB02302B4D60021F628 /* Utils.swift in Sources */,
 				22229A4E22FAC8240065B9F6 /* BaseNavigationController.swift in Sources */,
 				225DABDE22FD683B009A4894 /* JSONKit.swift in Sources */,
+				22BCCD7D23190C7900AA0CD5 /* UserModel.swift in Sources */,
+				22BCCD83231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift in Sources */,
 				22229A5222FAC8D90065B9F6 /* LoginController.swift in Sources */,
 				2229FDFA230698F40021F628 /* XCAddressPicker.swift in Sources */,
 				22229A5922FAD7230065B9F6 /* UIColor-Extension.swift in Sources */,

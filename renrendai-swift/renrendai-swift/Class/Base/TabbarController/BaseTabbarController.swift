@@ -14,15 +14,6 @@ class BaseTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //去掉UITabbar原有的选染色
-//        UITabBar.appearance().isTranslucent = false
-//
-//        view.backgroundColor = UIColor.white
-//        tabBar.backgroundColor = UIColor.white
-//        UITabBar.appearance().shadowImage = UIImage()
-//        UITabBar.appearance().backgroundImage = UIImage()
-        
-        
         initTabbar()
         
     }
@@ -40,9 +31,10 @@ class BaseTabbarController: UITabBarController {
     func initTabbar(){
         
         // ....
-        //addChild(<#T##childController: UIViewController##UIViewController#>, title: <#T##String#>, imageNmae: <#T##String#>)
-        addChild(MainViewController.init(), title: "1111", imageName: "icon_tabbar_complex")
-        addChild(LoginController.init(), title: "1111", imageName: "icon_tabbar_complex")
+        addChild(MainViewController.init(), title: "业务申请", imageName: "icon_tabbar_home")
+        addChild(OrderViewController.init(), title: "综合查询", imageName: "icon_tabbar_search")
+        addChild(OrderViewController.init(), title: "钱包", imageName: "icon_tabbar_wallet")
+        addChild(OrderViewController.init(), title: "个人中心", imageName: "icon_tabbar_mine")
 
     }
     
@@ -50,10 +42,11 @@ class BaseTabbarController: UITabBarController {
         
         let navVC = BaseNavigationController.init(rootViewController: childController)
         childController.tabBarItem.title = title
+        childController.navigationItem.title = title
         childController.tabBarItem.setTitleTextAttributes([.foregroundColor : UIColor.colorWithHex(hex:0xEC4A52)], for: .selected)
         childController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.gray], for: .normal)
         childController.tabBarItem.image = UIImage(named: imageName)
-        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_on")
         self.addChild(navVC)
         
     }
