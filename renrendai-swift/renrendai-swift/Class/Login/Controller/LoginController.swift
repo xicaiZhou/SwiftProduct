@@ -13,22 +13,33 @@ import KakaJSON
 
 class LoginController: BaseViewController {
 
+    
+    
+    lazy var loginView: cus = {
+        
+        let loginView = cus(frame:self.view.bounds)
+        return loginView
+    }()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.purple;
         // Do any additional setup after loading the view.
         
-        
-        after(5) {
-            let param : Dictionary = ["phoneNumber":"15590284773","password":"21218cca77804d2ba1922c33e0151105"];
-            XCNetWorkTools.share.requestData(type: .post, api: "user/login", encoding: .JSON, parameters: param, success: { (res) in
-                
-                Utils.saveUserInfo(info: res)
-                self.pushTabViewController()
-            }) { (errorInfo) in
-                
-            }
-        }
+        view.addSubview(self.loginView)
+//
+//        after(5) {
+//            let param : Dictionary = ["phoneNumber":"15590284773","password":"21218cca77804d2ba1922c33e0151105"];
+//            XCNetWorkTools.share.requestData(type: .post, api: "user/login", encoding: .JSON, parameters: param, success: { (res) in
+//
+//                Utils.saveUserInfo(info: res)
+//                self.pushTabViewController()
+//            }) { (errorInfo) in
+//
+//            }
+//        }
 
         
 //

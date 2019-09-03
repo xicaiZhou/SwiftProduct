@@ -39,6 +39,8 @@
 		22BCCD7D23190C7900AA0CD5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD7C23190C7900AA0CD5 /* UserModel.swift */; };
 		22BCCD83231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */; };
 		22BCCD85231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */; };
+		22BCCDC5231E816800AA0CD5 /* cus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCCDC4231E816800AA0CD5 /* cus.swift */; };
+		22BCCDC7231E817B00AA0CD5 /* cus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BCCDC6231E817B00AA0CD5 /* cus.xib */; };
 		A6C087C7641347D423308833 /* Pods_renrendai_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		22BCCD7C23190C7900AA0CD5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLHJ_CodeLoginView.swift; sourceTree = "<group>"; };
 		22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLHJ_CodeLoginView.xib; sourceTree = "<group>"; };
+		22BCCDC4231E816800AA0CD5 /* cus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cus.swift; sourceTree = "<group>"; };
+		22BCCDC6231E817B00AA0CD5 /* cus.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cus.xib; sourceTree = "<group>"; };
 		9F52B148CFB4DD581086FF65 /* Pods-renrendai-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.debug.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C543036D96C43DE8F8EBE5 /* Pods-renrendai-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renrendai-swift.release.xcconfig"; path = "Target Support Files/Pods-renrendai-swift/Pods-renrendai-swift.release.xcconfig"; sourceTree = "<group>"; };
 		E24244A9C027D9EACA396DCF /* Pods_renrendai_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_renrendai_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +401,8 @@
 			children = (
 				22BCCD82231E658C00AA0CD5 /* ZLHJ_CodeLoginView.swift */,
 				22BCCD84231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib */,
+				22BCCDC4231E816800AA0CD5 /* cus.swift */,
+				22BCCDC6231E817B00AA0CD5 /* cus.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				22229A2122F98A960065B9F6 /* LaunchScreen.storyboard in Resources */,
 				22229A1E22F98A960065B9F6 /* Assets.xcassets in Resources */,
 				22205464230E6955006B2A76 /* address.json in Resources */,
+				22BCCDC7231E817B00AA0CD5 /* cus.xib in Resources */,
 				22BCCD85231E660B00AA0CD5 /* ZLHJ_CodeLoginView.xib in Resources */,
 				22229A1C22F98A950065B9F6 /* Main.storyboard in Resources */,
 			);
@@ -598,6 +605,7 @@
 				225DABD922FD0EFB009A4894 /* XCNetwork.swift in Sources */,
 				22229A5022FAC8840065B9F6 /* BaseTabbarController.swift in Sources */,
 				22BCCD7A23190AC300AA0CD5 /* OrderInfoModel.swift in Sources */,
+				22BCCDC5231E816800AA0CD5 /* cus.swift in Sources */,
 				22229A1722F98A950065B9F6 /* AppDelegate.swift in Sources */,
 				2229FDB22302B4E50021F628 /* Alert.swift in Sources */,
 				22229A5A22FAD7230065B9F6 /* NSDate-Extension.swift in Sources */,

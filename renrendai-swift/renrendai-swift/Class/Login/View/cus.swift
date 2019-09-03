@@ -1,5 +1,5 @@
 //
-//  ZLHJ_CodeLoginView.swift
+//  cus.swift
 //  renrendai-swift
 //
 //  Created by 周希财 on 2019/9/3.
@@ -8,19 +8,11 @@
 
 import UIKit
 
-class ZLHJ_CodeLoginView: UIView {
+class cus: UIView {
 
-
-    @IBOutlet weak var PhoneTextField: UITextField!
-    
-    @IBOutlet weak var phoneLine: UIView!
-    
-    @IBOutlet weak var codeTextField: UITextField!
-    
-    @IBOutlet weak var codeLine: UIView!
 
     var contentView:UIView!
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView = loadXib()
@@ -34,13 +26,13 @@ class ZLHJ_CodeLoginView: UIView {
         addSubview(contentView)
         
     }
-
+    
     func loadXib() ->UIView {
-
+        
         let name: String = String(describing: ZLHJ_CodeLoginView.self)
-
-
-        return Bundle.main.loadNibNamed("ZLHJ_CodeLoginView", owner: nil, options: nil)?.first as! UIView
-
+        
+        
+        return Bundle.main.loadNibNamed("cus", owner: nil, options: nil)?.first as! UIView
+        
     }
 }

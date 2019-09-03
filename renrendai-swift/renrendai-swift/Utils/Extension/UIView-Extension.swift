@@ -69,7 +69,15 @@ extension UIButton {
     }
 }
 extension UIView {
-    
+//    public class func instantiateFromNib() -> UIView {
+//        let className = type(of:self)
+//        let bundle = Bundle(for:className as! AnyClass)
+//        let name = NSStringFromClass(className as! AnyClass).components(separatedBy: ".").last
+//        let nib = UINib(nibName: name!, bundle: bundle)
+//        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+//        
+//        return view
+//    }
     public func viewCorner(byRoundingCorners corners: UIRectCorner, radii: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
         let maskLayer = CAShapeLayer()

@@ -48,20 +48,20 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvQ-NC-5py">
-                            <rect key="frame" x="0.0" y="91" width="374" height="1"/>
+                            <rect key="frame" x="0.0" y="81" width="374" height="1"/>
                             <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="PSj-r2-WAW"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAS-Rg-uTc">
-                            <rect key="frame" x="10" y="102" width="52" height="21"/>
+                            <rect key="frame" x="10" y="92" width="52" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyP-9A-FYd">
-                            <rect key="frame" x="10" y="133" width="244" height="40"/>
+                            <rect key="frame" x="10" y="123" width="244" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="oKl-D5-iJn"/>
                             </constraints>
@@ -70,14 +70,14 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCN-yG-ore">
-                            <rect key="frame" x="0.0" y="183" width="374" height="1"/>
+                            <rect key="frame" x="0.0" y="163" width="374" height="1"/>
                             <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="u4V-Ss-vTV"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3P-AM-9Eu">
-                            <rect key="frame" x="254" y="138.5" width="120" height="29"/>
+                            <rect key="frame" x="254" y="128.5" width="120" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="120" id="qQM-15-UtW"/>
                             </constraints>
@@ -91,9 +91,9 @@
                         <constraint firstItem="9YV-8r-mtF" firstAttribute="leading" secondItem="a5G-dQ-7dd" secondAttribute="leading" constant="10" id="4Xx-c4-VpP"/>
                         <constraint firstItem="HvQ-NC-5py" firstAttribute="leading" secondItem="a5G-dQ-7dd" secondAttribute="leading" id="5uS-4l-j0Z"/>
                         <constraint firstItem="sCN-yG-ore" firstAttribute="trailing" secondItem="r3P-AM-9Eu" secondAttribute="trailing" id="64J-iH-dIR"/>
-                        <constraint firstItem="HvQ-NC-5py" firstAttribute="top" secondItem="Mn3-IQ-YvJ" secondAttribute="bottom" constant="10" id="A42-Zq-m4D"/>
+                        <constraint firstItem="HvQ-NC-5py" firstAttribute="top" secondItem="Mn3-IQ-YvJ" secondAttribute="bottom" id="A42-Zq-m4D"/>
                         <constraint firstItem="NyP-9A-FYd" firstAttribute="top" secondItem="EAS-Rg-uTc" secondAttribute="bottom" constant="10" id="A7l-vS-3z7"/>
-                        <constraint firstItem="sCN-yG-ore" firstAttribute="top" secondItem="NyP-9A-FYd" secondAttribute="bottom" constant="10" id="B60-T2-hmI"/>
+                        <constraint firstItem="sCN-yG-ore" firstAttribute="top" secondItem="NyP-9A-FYd" secondAttribute="bottom" id="B60-T2-hmI"/>
                         <constraint firstItem="r3P-AM-9Eu" firstAttribute="leading" secondItem="NyP-9A-FYd" secondAttribute="trailing" id="Cm1-2Z-HBP"/>
                         <constraint firstAttribute="height" constant="200" id="Gyd-tS-ZjO"/>
                         <constraint firstItem="EAS-Rg-uTc" firstAttribute="top" secondItem="HvQ-NC-5py" secondAttribute="bottom" constant="10" id="KgN-GN-ljZ"/>
@@ -108,6 +108,14 @@
                         <constraint firstItem="sCN-yG-ore" firstAttribute="leading" secondItem="HvQ-NC-5py" secondAttribute="leading" id="yxl-pJ-hMZ"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOe-zQ-603">
+                    <rect key="frame" x="57" y="354" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="a2h-68-dGx"/>
+                        <constraint firstAttribute="width" constant="300" id="i6G-zC-0Cm"/>
+                    </constraints>
+                    <state key="normal" title="登录"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -115,12 +123,20 @@
                 <constraint firstItem="a5G-dQ-7dd" firstAttribute="top" secondItem="Bvt-Fh-TDO" secondAttribute="bottom" constant="20" id="4Xe-z4-MU7"/>
                 <constraint firstItem="DtR-gJ-P3I" firstAttribute="leading" secondItem="9Bt-BC-lD8" secondAttribute="leading" id="HpY-gW-smF"/>
                 <constraint firstAttribute="trailing" secondItem="DtR-gJ-P3I" secondAttribute="trailing" id="J9F-fw-lkI"/>
+                <constraint firstItem="aOe-zQ-603" firstAttribute="top" secondItem="a5G-dQ-7dd" secondAttribute="bottom" constant="-20" id="RsX-Yg-gl0"/>
                 <constraint firstItem="S3y-tT-dRD" firstAttribute="trailing" secondItem="a5G-dQ-7dd" secondAttribute="trailing" constant="20" id="c5k-Ks-4Jr"/>
                 <constraint firstItem="Bvt-Fh-TDO" firstAttribute="centerX" secondItem="9Bt-BC-lD8" secondAttribute="centerX" id="f4a-7J-TE3"/>
                 <constraint firstItem="DtR-gJ-P3I" firstAttribute="top" secondItem="9Bt-BC-lD8" secondAttribute="top" id="juM-YA-ahh"/>
                 <constraint firstItem="a5G-dQ-7dd" firstAttribute="leading" secondItem="S3y-tT-dRD" secondAttribute="leading" constant="20" id="qqa-Zh-0g2"/>
+                <constraint firstItem="aOe-zQ-603" firstAttribute="centerX" secondItem="9Bt-BC-lD8" secondAttribute="centerX" id="vPA-yN-KFl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="S3y-tT-dRD"/>
+            <connections>
+                <outlet property="PhoneTextField" destination="Mn3-IQ-YvJ" id="Sk8-5O-nB8"/>
+                <outlet property="codeLine" destination="sCN-yG-ore" id="Ifp-QK-Q5W"/>
+                <outlet property="codeTextField" destination="NyP-9A-FYd" id="Oct-vX-oNs"/>
+                <outlet property="phoneLine" destination="HvQ-NC-5py" id="evA-j9-nfV"/>
+            </connections>
             <point key="canvasLocation" x="-839.13043478260875" y="-226.33928571428569"/>
         </view>
     </objects>
