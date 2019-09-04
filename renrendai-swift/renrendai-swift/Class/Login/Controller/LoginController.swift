@@ -18,7 +18,7 @@ class LoginController: BaseViewController {
     lazy var loginView: ZLHJ_LoginView = {
         
         let loginView = ZLHJ_LoginView.loadFromNib()
-        loginView.frame = CGRect(x: 0, y: 100, width: kScreenWidth, height: 200)
+        loginView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: KStatusHeight)
         return loginView
     }()
     
@@ -26,7 +26,6 @@ class LoginController: BaseViewController {
         super.viewDidLoad()
         
         self.view.addSubview(self.loginView)
-        self.loginView.label.text = "我太难了"
         // Do any additional setup after loading the view.
 
         //

@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds);
         self.window?.backgroundColor = UIColor.white;
-        if Utils.isLogin(){
+//        if Utils.isLogin(){
             self.window?.rootViewController = BaseNavigationController(rootViewController: LoginController.init());
-        }else {
-            self.window?.rootViewController = BaseTabbarController.init();
-        }
+//        }else {
+//            self.window?.rootViewController = BaseTabbarController.init();
+//        }
         self.window?.makeKeyAndVisible()
         return true
     }

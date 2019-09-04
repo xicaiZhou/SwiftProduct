@@ -11,8 +11,6 @@ import UIKit
 class ZLHJ_LoginView: UIView, NIBLoadable {
     
     
-//    @IBOutlet var contentView: UIView!
-    @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
