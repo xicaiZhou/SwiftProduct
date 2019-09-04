@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="E6T-BO-mAz" customClass="cus" customModule="renrendai_swift" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="atX-ai-qdT" customClass="ZLHJ_LoginView" customModule="renrendai_swift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-zP-hRs">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-4j-5yh">
                     <rect key="frame" x="186" y="437.5" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -25,11 +25,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="PIj-zP-hRs" firstAttribute="centerY" secondItem="E6T-BO-mAz" secondAttribute="centerY" id="HMf-Xb-fWn"/>
-                <constraint firstItem="PIj-zP-hRs" firstAttribute="centerX" secondItem="E6T-BO-mAz" secondAttribute="centerX" id="fVS-Jc-Ca3"/>
+                <constraint firstItem="EGQ-4j-5yh" firstAttribute="centerY" secondItem="atX-ai-qdT" secondAttribute="centerY" id="CMu-kJ-gQ4"/>
+                <constraint firstItem="EGQ-4j-5yh" firstAttribute="centerX" secondItem="atX-ai-qdT" secondAttribute="centerX" id="e50-yx-7v7"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="gDK-0W-boJ"/>
-            <point key="canvasLocation" x="-238" y="-157"/>
+            <viewLayoutGuide key="safeArea" id="hBT-6k-haw"/>
+            <connections>
+                <outlet property="label" destination="EGQ-4j-5yh" id="yBs-8L-gnY"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="12"/>
         </view>
     </objects>
 </document>

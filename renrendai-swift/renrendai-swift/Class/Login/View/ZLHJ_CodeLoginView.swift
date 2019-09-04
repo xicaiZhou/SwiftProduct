@@ -11,20 +11,12 @@ import UIKit
 class ZLHJ_CodeLoginView: UIView {
 
 
-    @IBOutlet weak var PhoneTextField: UITextField!
-    
-    @IBOutlet weak var phoneLine: UIView!
-    
-    @IBOutlet weak var codeTextField: UITextField!
-    
-    @IBOutlet weak var codeLine: UIView!
 
     var contentView:UIView!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView = loadXib()
-        
         addSubview(contentView)
     }
     

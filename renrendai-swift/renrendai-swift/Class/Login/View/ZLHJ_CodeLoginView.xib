@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLHJ_CodeLoginView" customModule="renrendai_swift" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="9Bt-BC-lD8" customClass="ZLHJ_CodeLoginView" customModule="renrendai_swift" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="9Bt-BC-lD8">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -110,6 +110,7 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOe-zQ-603">
                     <rect key="frame" x="57" y="354" width="300" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="a2h-68-dGx"/>
                         <constraint firstAttribute="width" constant="300" id="i6G-zC-0Cm"/>
@@ -131,12 +132,6 @@
                 <constraint firstItem="aOe-zQ-603" firstAttribute="centerX" secondItem="9Bt-BC-lD8" secondAttribute="centerX" id="vPA-yN-KFl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="S3y-tT-dRD"/>
-            <connections>
-                <outlet property="PhoneTextField" destination="Mn3-IQ-YvJ" id="Sk8-5O-nB8"/>
-                <outlet property="codeLine" destination="sCN-yG-ore" id="Ifp-QK-Q5W"/>
-                <outlet property="codeTextField" destination="NyP-9A-FYd" id="Oct-vX-oNs"/>
-                <outlet property="phoneLine" destination="HvQ-NC-5py" id="evA-j9-nfV"/>
-            </connections>
             <point key="canvasLocation" x="-839.13043478260875" y="-226.33928571428569"/>
         </view>
     </objects>
